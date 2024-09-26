@@ -4,10 +4,10 @@ import java.util.Scanner;
 public class JuegoAdivinanzas {
     public static void main(String[] args) {
         Random random = new Random();
-        int numeroAleatorio = 0;
+        int numeroAleatorio ;
 
         Scanner adivinanza = new Scanner(System.in);
-        int numeroAdivinado = 0;
+        int numeroAdivinado ;
         int numeroDeintentos = 5;
 
         for (int i = 1; i<=numeroDeintentos; i++){
@@ -29,5 +29,6 @@ public class JuegoAdivinanzas {
         }
 
         System.out.println("Fin del juego");
+        adivinanza.close();
     }
 }
